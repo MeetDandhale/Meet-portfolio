@@ -3,46 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meet Dandhale's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Meet Dandhale</h1>
+            <h2>DevOps | Site Reliability Engineer</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#devops-sre">DevOps & SRE</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio website. Here you'll find information about me and my work.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Experienced DevOps Engineer adept at driving agile methodologies to streamline product development. Proven track record in seamlessly configuring and deploying complex web-based systems through robust automation techniques. Specialized in enhancing the efficiency of Digital API platforms by proficiently managing mission-critical deployments and employing top-tier configuration strategies, while skillfully overseeing multiple facets of the DevOps spectrum.</p>
+        </div>
     </section>
-    
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Cloud Technology: Microsoft Azure, AWS</li>
+                <li>CI/CD: Azure DevOps, Jenkins</li>
+                <li>Containerization: Docker</li>
+                <li>Orchestration Tool: Kubernetes</li>
+                <li>Programming Language: Python, Shell Scripting</li>
+                <li>Monitoring Tool: Prometheus, Grafana</li>
+                <li>Repositories: Git (GitLab, GitHub, Azure Repo)</li>
+                <li>Image Registry: Nexus, Docker Hub, JFrog</li>
+                <li>Load Balancer: HAProxy, Ingress-controller</li>
+                <li>Operating System: Linux, Windows</li>
+                <li>Cloud Services: Familiarity with cloud platforms such as AWS, Azure, or Google Cloud for deploying and managing applications and infrastructure</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="devops-sre">
+        <div class="container">
+            <h2>What is DevOps & SRE?</h2>
+            <div class="definition">
+                <h3>DevOps</h3>
+                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the development lifecycle and deliver high-quality software continuously. DevOps practices include continuous integration, continuous delivery, and the use of infrastructure as code, among others. The goal is to improve collaboration between development and operations teams, automate processes, and increase the speed and reliability of software deployment.</p>
+            </div>
+            <div class="definition">
+                <h3>Site Reliability Engineering (SRE)</h3>
+                <p>SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. The main goals are to create scalable and highly reliable software systems. SREs use a software engineering approach to system administration topics, automating and improving system reliability and performance. They focus on metrics like availability, latency, performance, efficiency, change management, monitoring, emergency response, and capacity planning.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
     </section>
-    
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me via email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <div class="container">
+            <p>&copy; 2024 Meet Dandhale</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
